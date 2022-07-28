@@ -1,5 +1,5 @@
 h1{
-    color: rgb(10, 106, 79);
+    color: rgb(197, 202, 200);
 }
 
 *{
@@ -8,13 +8,11 @@ h1{
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
-    font-size: 62.5%;/* 1rem = 10px*/
-}
+
 body{
-    font-size: 1.4rem;/* soit 14px*/
+    font-size: 18px;
     font-family: arial;
-    color: white;
+    color: #F2E3CF;
 }
 .container{
     height: 100vh;
@@ -22,13 +20,19 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #1E2337;
+    background-color: #222323;
 }
 
 .banniere-titre{
     margin-bottom: 1rem;
 }
 
+
+
+
+
+
+/* DESKTOP */
 .navbar-desktop {
     background-color: #2C3231;
     padding: 10px;
@@ -38,30 +42,63 @@ body{
 }
 
 .navbar-desktop a {
-    padding: 30px;
-    color: white;
+    padding: 20px;
+    color: #F2E3CF;
     font-size: 24px;
-
 }
 
-.navbar-mobile{
-    position: fixed;
+.navbar-desktop input {
+    font-size: 24px;
+    height: 36px;
+    border: #f7f7f7;
+    border-radius: 5px;
+}
+
+.navbar-desktop button {
+    font-size: 24px;
+    background-color: #f7f7f7;
+    padding: 2px;
+    border-radius: 5px;
+    border: #f7f7f7;
+}
+
+.navbar-desktop button:hover {
+    background-color: rgb(207, 207, 207);
+    cursor: pointer;
+}
+
+
+
+
+
+/* MOBILE */
+.navbar-mobile {
+    /* position: fixed;
     top: 9px;
     right: 15px;
-    color: red;
+    color: red; */
     display: none;
 }
 
-.navbar-mobile .modal{
-    background-color: rgb(146, 24, 153);
-    height: 100vh;
+.navbar-mobile i {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0.9;
+    z-index: 9999;
+    top: 9px;
+    right: 15px;
+    font-size: 40px;
+    color: white;
 }
 
+.modal{
+    transition: top 0.9s;
+    background-color: rgb(116, 17, 53);
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    opacity: 0.97;
+}
 
 .navbar-mobile .navbar-mobile-list {
     display: flex;
@@ -74,23 +111,16 @@ body{
 .navbar-mobile .navbar-mobile-list a{
     font-size: 50px;
     font-weight: 800;
-    color: beige;
+    color: #f5f5dc;
     padding: 20px;
 }
-
-.navbar-mobile i {
-    position: fixed;
-    z-index: 9999;
-    top: 9px;
-    right: 15px;
-    font-size: 40px;
-    color: white;
+.change-modal{
+    top: 0;
 }
-
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width : 860px){
+@media screen and (max-width : 1050px){
     .navbar-desktop{
         display: none;
     }
