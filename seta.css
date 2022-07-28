@@ -11,7 +11,7 @@ h1{
 
 body{
     font-size: 18px;
-    font-family: arial;
+    font-family: sans-serif;
     color: #F2E3CF;
 }
 .container{
@@ -21,6 +21,8 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #222323;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .banniere-titre{
